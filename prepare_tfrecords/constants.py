@@ -1,9 +1,0 @@
-
-
-COCO_ANNOTATION_PATH = "path.json"
-FOLDER_WITH_COCO_IMAGES_PATH = "folder_with_image"
-MIN_IMAGE_SIZE = 512
-
-PATH_TO_SAVE_TFRECORDS = "tfrecords/"
-IMAGES_PR = 50
-
