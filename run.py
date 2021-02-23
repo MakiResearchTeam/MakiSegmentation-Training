@@ -4,11 +4,11 @@ import makiflow as mf
 from gen_layer import get_gen_layer
 from tensorboard import Tensorboard
 import argparse
-mf.set_main_gpu(0)
+mf.set_main_gpu(1)
 
 # Path to the config file
 CONFIG_PATH = 'config.json'
-DEFAULT_PORT = 6006
+DEFAULT_PORT = 51125
 
 
 def parse_args():
