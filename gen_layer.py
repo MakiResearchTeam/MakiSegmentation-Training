@@ -47,7 +47,8 @@ def create_generator(path_images, path_masks):
     return gen
 
 
-def get_generator(path_images, path_masks):
+def get_gen_layer(data_gen_path, im_hw, batch_sz, prefetch_sz):
+    path_images, path_masks = data_gen_path
     map_method = AugmentationPostMethod(
         use_rotation=True,
         angle_min=-60.0,
@@ -66,14 +67,14 @@ def get_generator(path_images, path_masks):
     map_method = NormalizePostMethod(use_float64=True)(map_method)
     map_method = ComputePositivesPostMethod()(map_method)
     return InputGenNumpyGetterLayer(
-        prefetch_size=8,
-        batch_size=8, 
+        prefetch_size=prefetch_sz,
+        batch_size=batch_sz,
         path_generator=create_generator(path_images, path_masks),
         name='Input',
         map_operation=map_method,
         num_parallel_calls=5,
-        mask_shape=(1024, 1024),
-        image_shape=(1024, 1024, 3)
+        mask_shape=im_hw,
+        image_shape=(im_hw[0], im_hw[1], 3)
     )
 
 
