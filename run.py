@@ -1,3 +1,4 @@
+import traceback
 from makiflow.gyms import Gym
 import tensorflow as tf
 import makiflow as mf
@@ -36,6 +37,7 @@ def run(port, config_path):
         gym.start_training()
     except Exception as ex:
         print(ex)
+        print(traceback.print_exc())
     finally:
         tb.close()
 
