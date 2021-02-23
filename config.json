@@ -25,8 +25,8 @@
 
     "genlayer_config": {
         "data_gen_path": [
-            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/train/images/",
-            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/train/masks/"
+            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/train/images/",
+            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/train/masks/"
         ],
         "im_hw": [1024, 1024],
         "batch_size": 8,
@@ -349,7 +349,7 @@
         "trainer_info": {
             "type": "FocalBinaryTrainer",
             "params": {
-                "SMOOTHING_LABELS": 0.1,
+                "SMOOTHING_LABELS": null,
                 "gamma": 2.0,
                 "norm_by_pos": true,
 
@@ -665,23 +665,23 @@
     "test_config": {
         "type": "SegmentatorBinaryTester",
         "test_image": [
-            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/73.bmp",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/88.bmp",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/8.bmp",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/77.bmp",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/84.bmp",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/14.bmp",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/39.bmp",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/80.bmp"],
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/1.bmp",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/24.bmp",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/54.bmp",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/62.bmp",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/63.bmp",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/70.bmp",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/74.bmp",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/95.bmp"],
         "test_mask": [
-            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/73",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/88",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/8",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/77",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/84",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/14",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/39",
-             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/80"],
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/1",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/24",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/54",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/62",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/63",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/70",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/74",
+             "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/95"],
         "classes_names": [
             "10",
             "20",
@@ -693,10 +693,10 @@
             "80"
         ],
         "train_image": [
-            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/images/73.bmp"
+            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/images/1.bmp"
         ],
         "train_mask": [
-            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/test/masks/73"
+            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_2/test/masks/1"
         ],
         "norm_mode": null,
         "normalization_shift": null,
