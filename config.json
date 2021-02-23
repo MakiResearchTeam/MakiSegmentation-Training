@@ -349,7 +349,7 @@
         "trainer_info": {
             "type": "FocalBinaryTrainer",
             "params": {
-                "SMOOTHING_LABELS": 0.1,
+                "SMOOTHING_LABELS": null,
                 "gamma": 2.0,
                 "norm_by_pos": true,
 
