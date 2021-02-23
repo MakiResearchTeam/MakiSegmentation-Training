@@ -689,10 +689,10 @@
             "80"
         ],
         "train_image": [
-            "/raid/rustam/med_data/data_2021/6_fold_cv/fold_3/test/images/14.bmp"
+           "/raid/rustam/med_data/data_2021/6_fold_cv/fold_3/test/images/24.bmp"
         ],
         "train_mask": [
-           "/raid/rustam/med_data/data_2021/6_fold_cv/fold_3/test/masks/14"
+           "/raid/rustam/med_data/data_2021/6_fold_cv/fold_3/test/masks/24"
         ],
         "norm_mode": null,
         "normalization_shift": null,
