@@ -25,8 +25,8 @@
 
     "genlayer_config": {
         "data_gen_path": [
-            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/train/images/",
-            "/raid/rustam/med_data/data_2021/3_fold_cv/fold_0/train/masks/"
+            "/raid/rustam/med_data/data_2021_fixed/3_fold_cv/fold_0/train/images/",
+            "/raid/rustam/med_data/data_2021_fixed/3_fold_cv/fold_0/train/masks/"
         ],
         "im_hw": [1024, 1024],
         "batch_size": 8,
@@ -39,7 +39,7 @@
         "test_period": 1,
         "save_period": 1,
         "print_period": 10,
-        "gym_folder": "/home/rustam/EyePit/PaperGradientBalancing/test_new_api/test_train_gym",
+        "gym_folder": "result",
         "optimizer_info": {
             "type": "AdamOptimizer",
                 "params": {
